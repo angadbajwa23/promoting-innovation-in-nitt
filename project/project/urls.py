@@ -27,7 +27,8 @@ urlpatterns = [
     path('projects/',include('projects.urls'),name='projects'),
     path('auth/',include('django.contrib.auth.urls'),name='login'),
     path('faq/',include('faq.urls'),name='faq'),
-    # path('resources/',include('resources.urls'),name='resources'),
+    path('stats/',include('stats.urls'),name='stats'),
+    path('help/',include('help.urls'),name='help'),
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
